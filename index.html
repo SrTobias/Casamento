@@ -29,7 +29,7 @@
       overflow: hidden;
       background: #fff;
       background-image: url('background.jpg');
-  background-size: 101vw 101vh;
+  background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
     }
@@ -85,6 +85,9 @@
     }
 
     @media (max-width: 768px) {
+      body {
+        background-size: contain;
+      }
       .vcard {
         flex-direction: column;
         gap: 10px;
